@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard - GuardianCare 24/7</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <a href="index.html" class="logo">GuardianCare 24/7</a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+        <li><a href="employees.html" class="nav-link">Caregivers</a></li>
+        <li><a href="reviews.html" class="nav-link">Reviews</a></li>
+      </ul>
+      <div class="nav-buttons">
+        <a href="dashboard.html" class="btn btn-secondary">Dashboard</a>
+        <a href="login.html" class="btn btn-primary">Logout</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Admin Dashboard -->
+  <div class="dashboard">
+    <div class="dashboard-header">
+      <h1 class="dashboard-title">Admin Dashboard</h1>
+      <p class="dashboard-subtitle">Manage bookings, reviews, and users</p>
+    </div>
+
+    <!-- Stats -->
+    <div class="dashboard-stats">
+      <div class="dashboard-stat">
+        <div class="dashboard-stat-value">512</div>
+        <div class="dashboard-stat-label">Total Users</div>
+      </div>
+      <div class="dashboard-stat">
+        <div class="dashboard-stat-value">1,245</div>
+        <div class="dashboard-stat-label">Total Bookings</div>
+      </div>
+      <div class="dashboard-stat">
+        <div class="dashboard-stat-value">₹3.2M</div>
+        <div class="dashboard-stat-label">Total Revenue</div>
+      </div>
+      <div class="dashboard-stat">
+        <div class="dashboard-stat-value">98%</div>
+        <div class="dashboard-stat-label">Completion Rate</div>
+      </div>
+    </div>
+
+    <!-- Tabs -->
+    <div style="background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); margin-bottom: 30px;">
+      <div class="admin-tabs">
+        <button class="admin-tab active">Overview</button>
+        <button class="admin-tab">Bookings</button>
+        <button class="admin-tab">Reviews</button>
+        <button class="admin-tab">Users</button>
+        <button class="admin-tab">Employees</button>
+      </div>
+
+      <!-- Bookings Tab -->
+      <div>
+        <h2 style="font-size: 22px; font-weight: bold; margin-bottom: 20px;">Pending Bookings</h2>
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Booking ID</th>
+                <th>Customer</th>
+                <th>Caregiver</th>
+                <th>Service</th>
+                <th>Date & Time</th>
+                <th>Amount</th>
+                <th>Status</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>#BK003</td>
+                <td>John Doe</td>
+                <td>Anjali Patel</td>
+                <td>Both Services</td>
+                <td>Jan 22, 2024 - 10:00 AM</td>
+                <td>₹2,400</td>
+                <td><span class="badge badge-warning">Pending</span></td>
+                <td>
+                  <button style="background: var(--success); color: white; border: none; padding: 6px 12px; border-radius: 4px; cursor: pointer; font-size: 12px; margin-right: 5px;">Confirm</button>
+                  <button style="background: var(--danger); color: white; border: none; padding: 6px 12px; border-radius: 4px; cursor: pointer; font-size: 12px;">Reject</button>
+                </td>
+              </tr>
+              <tr>
+                <td>#BK004</td>
+                <td>Jane Smith</td>
+                <td>Priya Sharma</td>
+                <td>Elderly Care</td>
+                <td>Jan 23, 2024 - 2:00 PM</td>
+                <td>₹1,800</td>
+                <td><span class="badge badge-warning">Pending</span></td>
+                <td>
+                  <button style="background: var(--success); color: white; border: none; padding: 6px 12px; border-radius: 4px; cursor: pointer; font-size: 12px; margin-right: 5px;">Confirm</button>
+                  <button style="background: var(--danger); color: white; border: none; padding: 6px 12px; border-radius: 4px; cursor: pointer; font-size: 12px;">Reject</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Reviews Tab -->
+      <div style="display: none;">
+        <h2 style="font-size: 22px; font-weight: bold; margin-bottom: 20px;">Customer Reviews</h2>
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Review ID</th>
+                <th>Customer</th>
+                <th>Service</th>
+                <th>Rating</th>
+                <th>Date</th>
+                <th>Review Text</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>#RV001</td>
+                <td>Rajesh Mishra</td>
+                <td>Elderly Care</td>
+                <td>⭐⭐⭐⭐⭐</td>
+                <td>Jan 15, 2024</td>
+                <td>Excellent service, very satisfied</td>
+                <td><button style="background: var(--danger); color: white; border: none; padding: 6px 12px; border-radius: 4px; cursor: pointer; font-size: 12px;">Delete</button></td>
+              </tr>
+              <tr>
+                <td>#RV002</td>
+                <td>Anita Sharma</td>
+                <td>Childcare</td>
+                <td>⭐⭐⭐⭐</td>
+                <td>Jan 14, 2024</td>
+                <td>Good service, kids are happy</td>
+                <td><button style="background: var(--danger); color: white; border: none; padding: 6px 12px; border-radius: 4px; cursor: pointer; font-size: 12px;">Delete</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Users Tab -->
+      <div style="display: none;">
+        <h2 style="font-size: 22px; font-weight: bold; margin-bottom: 20px;">Registered Users</h2>
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>User ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Type</th>
+                <th>Join Date</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>#U001</td>
+                <td>John Doe</td>
+                <td>john@example.com</td>
+                <td>+91 98765 43210</td>
+                <td>Customer</td>
+                <td>Jan 5, 2024</td>
+                <td><span class="badge badge-success">Active</span></td>
+              </tr>
+              <tr>
+                <td>#U002</td>
+                <td>Priya Sharma</td>
+                <td>priya@example.com</td>
+                <td>+91 98765 43211</td>
+                <td>Caregiver</td>
+                <td>Dec 20, 2023</td>
+                <td><span class="badge badge-success">Active</span></td>
+              </tr>
+              <tr>
+                <td>#U003</td>
+                <td>Jane Smith</td>
+                <td>jane@example.com</td>
+                <td>+91 98765 43212</td>
+                <td>Customer</td>
+                <td>Jan 10, 2024</td>
+                <td><span class="badge badge-success">Active</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>GuardianCare 24/7</h4>
+        <p style="color: #d1d5db; font-size: 14px;">Professional care services for elderly and children, trusted by families across India.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="employees.html">Our Team</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:support@guardiancare.com">support@guardiancare.com</a></li>
+          <li><a href="tel:+919876543210">+91 98765 43210</a></li>
+          <li>New Delhi, India</li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Follow Us</h4>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 GuardianCare 24/7. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/utils.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>

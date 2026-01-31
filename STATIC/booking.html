@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Service - GuardianCare 24/7</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <a href="index.html" class="logo">GuardianCare 24/7</a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+        <li><a href="employees.html" class="nav-link">Caregivers</a></li>
+        <li><a href="reviews.html" class="nav-link">Reviews</a></li>
+      </ul>
+      <div class="nav-buttons">
+        <a href="login.html" class="btn btn-secondary">Login</a>
+        <a href="signup.html" class="btn btn-primary">Sign Up</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Booking Section -->
+  <div class="booking-container">
+    <!-- Booking Form -->
+    <div class="booking-form">
+      <h2 style="margin-bottom: 30px; font-size: 28px;">Book a Service</h2>
+      
+      <form>
+        <div class="form-group">
+          <label>Service Type</label>
+          <select required>
+            <option value="">Select service type</option>
+            <option value="elderly">Elderly Care</option>
+            <option value="childcare">Childcare</option>
+            <option value="both">Both Services</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Select Plan</label>
+          <select required>
+            <option value="">Select a plan</option>
+            <option value="basic">Basic - ₹2,500/month</option>
+            <option value="standard">Standard - ₹5,000/month</option>
+            <option value="premium">Premium - ₹10,000/month</option>
+            <option value="elderly">Elderly Special - ₹7,500/month</option>
+            <option value="childcare">Childcare Plus - ₹6,500/month</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Preferred Caregiver</label>
+          <select required>
+            <option value="">Select caregiver</option>
+            <option value="priya">Priya Sharma - Elderly Care Specialist</option>
+            <option value="rajesh">Rajesh Kumar - Childcare Expert</option>
+            <option value="anjali">Anjali Patel - Both Services</option>
+            <option value="vikram">Vikram Singh - Elderly Care Specialist</option>
+            <option value="neha">Neha Gupta - Childcare Expert</option>
+            <option value="arjun">Arjun Verma - Both Services</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Start Date</label>
+          <input type="date" required>
+        </div>
+
+        <div class="form-group">
+          <label>Start Time</label>
+          <input type="time" required>
+        </div>
+
+        <div class="form-group">
+          <label>Duration (Hours)</label>
+          <select required>
+            <option value="">Select duration</option>
+            <option value="2">2 hours - ₹600</option>
+            <option value="4">4 hours - ₹1,200</option>
+            <option value="6">6 hours - ₹1,800</option>
+            <option value="8">8 hours - ₹2,400</option>
+            <option value="12">12 hours - ₹3,600</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Special Requirements</label>
+          <textarea placeholder="Any special needs or requirements for the caregiver..."></textarea>
+        </div>
+
+        <div class="form-group">
+          <label>Address</label>
+          <textarea placeholder="Service address..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%; padding: 12px;">Book Service</button>
+      </form>
+    </div>
+
+    <!-- Order Summary -->
+    <div class="order-summary">
+      <div class="summary-title">Order Summary</div>
+
+      <div class="summary-item">
+        <span>Service Type</span>
+        <span>-</span>
+      </div>
+
+      <div class="summary-item">
+        <span>Plan</span>
+        <span>-</span>
+      </div>
+
+      <div class="summary-item">
+        <span>Caregiver</span>
+        <span>-</span>
+      </div>
+
+      <div class="summary-item">
+        <span>Date & Time</span>
+        <span>-</span>
+      </div>
+
+      <div class="summary-item">
+        <span>Duration</span>
+        <span>-</span>
+      </div>
+
+      <div class="summary-item">
+        <span>Hourly Rate</span>
+        <span>₹300</span>
+      </div>
+
+      <div class="summary-total">
+        <span>Total Amount</span>
+        <span>₹0</span>
+      </div>
+
+      <div style="margin-top: 20px; padding: 15px; background: #e0f2fe; border-radius: 6px; border-left: 4px solid var(--secondary);">
+        <p style="color: #0369a1; font-size: 13px; margin: 0;">
+          <strong>Note:</strong> You can change or cancel this booking up to 24 hours before the service starts.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>GuardianCare 24/7</h4>
+        <p style="color: #d1d5db; font-size: 14px;">Professional care services for elderly and children, trusted by families across India.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="employees.html">Our Team</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:support@guardiancare.com">support@guardiancare.com</a></li>
+          <li><a href="tel:+919876543210">+91 98765 43210</a></li>
+          <li>New Delhi, India</li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Follow Us</h4>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 GuardianCare 24/7. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/utils.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/forms.js"></script>
+</body>
+</html>

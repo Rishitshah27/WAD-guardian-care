@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - GuardianCare 24/7</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <a href="index.html" class="logo">GuardianCare 24/7</a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+        <li><a href="employees.html" class="nav-link">Caregivers</a></li>
+        <li><a href="reviews.html" class="nav-link">Reviews</a></li>
+      </ul>
+      <div class="nav-buttons">
+        <a href="admin.html" class="btn btn-secondary">Admin</a>
+        <a href="login.html" class="btn btn-primary">Logout</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Dashboard -->
+  <div class="dashboard">
+    <div class="dashboard-header">
+      <h1 class="dashboard-title">Welcome, John!</h1>
+      <p class="dashboard-subtitle">Manage your bookings and care services</p>
+    </div>
+
+    <!-- Stats -->
+    <div class="dashboard-stats">
+      <div class="dashboard-stat">
+        <div class="dashboard-stat-value">5</div>
+        <div class="dashboard-stat-label">Active Bookings</div>
+      </div>
+      <div class="dashboard-stat">
+        <div class="dashboard-stat-value">23</div>
+        <div class="dashboard-stat-label">Completed Services</div>
+      </div>
+      <div class="dashboard-stat">
+        <div class="dashboard-stat-value">₹45,000</div>
+        <div class="dashboard-stat-label">Total Spent</div>
+      </div>
+      <div class="dashboard-stat">
+        <div class="dashboard-stat-value">4.9/5</div>
+        <div class="dashboard-stat-label">Average Rating</div>
+      </div>
+    </div>
+
+    <!-- Bookings -->
+    <div style="background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); margin-bottom: 40px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+        <h2 style="font-size: 22px; font-weight: bold;">Active Bookings</h2>
+        <a href="booking.html" class="btn btn-primary">New Booking</a>
+      </div>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Booking ID</th>
+              <th>Caregiver</th>
+              <th>Service</th>
+              <th>Date & Time</th>
+              <th>Duration</th>
+              <th>Status</th>
+              <th>Amount</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>#BK001</td>
+              <td>Priya Sharma</td>
+              <td>Elderly Care</td>
+              <td>Jan 20, 2024 - 9:00 AM</td>
+              <td>4 hours</td>
+              <td><span class="badge badge-success">Confirmed</span></td>
+              <td>₹1,200</td>
+              <td><a href="#" style="color: var(--primary); text-decoration: none; font-weight: 600; font-size: 12px;">Cancel</a></td>
+            </tr>
+            <tr>
+              <td>#BK002</td>
+              <td>Rajesh Kumar</td>
+              <td>Childcare</td>
+              <td>Jan 21, 2024 - 2:00 PM</td>
+              <td>6 hours</td>
+              <td><span class="badge badge-success">Confirmed</span></td>
+              <td>₹1,800</td>
+              <td><a href="#" style="color: var(--primary); text-decoration: none; font-weight: 600; font-size: 12px;">Cancel</a></td>
+            </tr>
+            <tr>
+              <td>#BK003</td>
+              <td>Anjali Patel</td>
+              <td>Both Services</td>
+              <td>Jan 22, 2024 - 10:00 AM</td>
+              <td>8 hours</td>
+              <td><span class="badge badge-warning">Pending</span></td>
+              <td>₹2,400</td>
+              <td><a href="#" style="color: var(--primary); text-decoration: none; font-weight: 600; font-size: 12px;">Cancel</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Booking History -->
+    <div style="background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);">
+      <h2 style="font-size: 22px; font-weight: bold; margin-bottom: 20px;">Booking History</h2>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Booking ID</th>
+              <th>Caregiver</th>
+              <th>Service</th>
+              <th>Date Completed</th>
+              <th>Duration</th>
+              <th>Amount</th>
+              <th>Rating</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>#BK000</td>
+              <td>Vikram Singh</td>
+              <td>Elderly Care</td>
+              <td>Jan 15, 2024</td>
+              <td>4 hours</td>
+              <td>₹1,200</td>
+              <td>⭐⭐⭐⭐⭐ (5/5)</td>
+            </tr>
+            <tr>
+              <td>#BK-1</td>
+              <td>Neha Gupta</td>
+              <td>Childcare</td>
+              <td>Jan 12, 2024</td>
+              <td>6 hours</td>
+              <td>₹1,800</td>
+              <td>⭐⭐⭐⭐ (4/5)</td>
+            </tr>
+            <tr>
+              <td>#BK-2</td>
+              <td>Arjun Verma</td>
+              <td>Both Services</td>
+              <td>Jan 10, 2024</td>
+              <td>8 hours</td>
+              <td>₹2,400</td>
+              <td>⭐⭐⭐⭐⭐ (5/5)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>GuardianCare 24/7</h4>
+        <p style="color: #d1d5db; font-size: 14px;">Professional care services for elderly and children, trusted by families across India.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="employees.html">Our Team</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:support@guardiancare.com">support@guardiancare.com</a></li>
+          <li><a href="tel:+919876543210">+91 98765 43210</a></li>
+          <li>New Delhi, India</li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Follow Us</h4>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 GuardianCare 24/7. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/utils.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

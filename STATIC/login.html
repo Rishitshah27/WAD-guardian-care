@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - GuardianCare 24/7</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <a href="index.html" class="logo">GuardianCare 24/7</a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+        <li><a href="employees.html" class="nav-link">Caregivers</a></li>
+        <li><a href="reviews.html" class="nav-link">Reviews</a></li>
+      </ul>
+      <div class="nav-buttons">
+        <a href="login.html" class="btn btn-secondary">Login</a>
+        <a href="signup.html" class="btn btn-primary">Sign Up</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Login Section -->
+  <section style="padding: 80px 20px;">
+    <div class="auth-container">
+      <div class="auth-title">Welcome Back</div>
+      <div class="auth-subtitle">Sign in to your GuardianCare account</div>
+
+      <form style="display: block;">
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="your@email.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        </div>
+
+        <div style="display: flex; justify-content: space-between; margin-bottom: 20px; font-size: 14px;">
+          <label style="display: flex; align-items: center; gap: 5px; font-weight: 400;">
+            <input type="checkbox" name="remember"> Remember me
+          </label>
+          <a href="#" style="color: #1e40af;">Forgot password?</a>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%; text-align: center;">Sign In</button>
+      </form>
+
+      <div style="margin-top: 30px; border-top: 1px solid #e5e7eb; padding-top: 30px;">
+        <div style="color: #6b7280; text-align: center; margin-bottom: 20px;">Demo Credentials</div>
+        <div style="background: #f9fafb; padding: 15px; border-radius: 6px; margin-bottom: 20px; font-size: 14px;">
+          <div><strong>Email:</strong> demo@example.com</div>
+          <div><strong>Password:</strong> demo123</div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 20px; color: #6b7280;">
+        Don't have an account? <a href="signup.html" style="color: #1e40af; font-weight: 600;">Sign up here</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer style="margin-top: 60px;">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>About Us</h4>
+        <ul>
+          <li><a href="#">Our Story</a></li>
+          <li><a href="#">Our Team</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+919876543210">+91 9876 543 210</a></li>
+          <li><a href="mailto:support@guardiancare.com">support@guardiancare.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 GuardianCare 24/7. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/utils.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/forms.js"></script>
+</body>
+</html>
