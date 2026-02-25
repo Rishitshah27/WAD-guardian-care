@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<navbar>
+  <logo>GuardianCare 24/7</logo>
+  <menu>
+    <item>
+      <name>Home</name>
+      <link>/</link>
+    </item>
+    <item>
+      <name>Pricing</name>
+      <link>/pricing</link>
+    </item>
+    <item>
+      <name>Caregivers</name>
+      <link>/caregivers</link>
+    </item>
+    <item>
+      <name>Reviews</name>
+      <link>/reviews</link>
+    </item>
+    <item>
+      <name>Login</name>
+      <link>/login</link>
+      <type>button-secondary</type>
+    </item>
+    <item>
+      <name>Sign Up</name>
+      <link>/signup</link>
+      <type>button-primary</type>
+    </item>
+  </menu>
+</navbar>

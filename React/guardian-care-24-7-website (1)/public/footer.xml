@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<footer>
+  <company>
+    <name>GuardianCare 24/7</name>
+    <tagline>Professional care services for elderly and children, trusted by families across India</tagline>
+  </company>
+  <sections>
+    <section>
+      <title>Quick Links</title>
+      <links>
+        <link href="/">Home</link>
+        <link href="/pricing">Pricing</link>
+        <link href="/caregivers">Caregivers</link>
+        <link href="/reviews">Reviews</link>
+      </links>
+    </section>
+    <section>
+      <title>Contact</title>
+      <contact>
+        <email>support@guardiancare.com</email>
+        <phone>+91 98765 43210</phone>
+        <address>New Delhi, India</address>
+      </contact>
+    </section>
+    <section>
+      <title>Follow Us</title>
+      <social>
+        <link>Facebook</link>
+        <link>Twitter</link>
+        <link>Instagram</link>
+      </social>
+    </section>
+  </sections>
+  <copyright>Copyright 2024 GuardianCare 24/7. All rights reserved.</copyright>
+</footer>
