@@ -3,7 +3,7 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import ServiceProviderCard from '../components/ServiceProviderCard';
 import { serviceCategories } from '../data/mockData';
-import { getProviders } from '../utils/storage';
+import { api } from '../utils/api';
 
 const ServicesPage = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
@@ -11,7 +11,15 @@ const ServicesPage = () => {
   const [providers, setProviders] = useState([]);
 
   useEffect(() => {
-    setProviders(getProviders());
+    const fetchProviders = async () => {
+      try {
+        const data = await api.get('providers');
+        setProviders(data);
+      } catch (error) {
+        console.error('Failed to fetch providers:', error);
+      }
+    };
+    fetchProviders();
   }, []);
 
   const filteredProviders = useMemo(() => {
