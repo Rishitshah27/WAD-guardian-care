@@ -3,22 +3,15 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { dashboardStats } from '../data/mockData';
-import { api } from '../utils/api';
+import { getBookings } from '../utils/storage';
 
 const DashboardPage = () => {
   const [activeTab, setActiveTab] = useState('overview');
   const [bookings, setBookings] = useState([]);
 
   useEffect(() => {
-    const fetchBookings = async () => {
-      try {
-        const data = await api.get('bookings');
-        setBookings(data);
-      } catch (error) {
-        console.error('Failed to fetch bookings:', error);
-      }
-    };
-    fetchBookings();
+    // Load from "Simple Backend"
+    setBookings(getBookings());
   }, []);
 
   const handleCancelBooking = (id) => {
